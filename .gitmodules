@@ -1,0 +1,3 @@
+[submodule "ghost-github"]
+	path = ghost-github
+	url = https://github.com/ifvictr/ghost-github.git

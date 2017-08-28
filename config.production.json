@@ -1,0 +1,36 @@
+{
+  "url": "https://blog.marskid.net/",
+  "server": {
+      "port": 2368,
+      "host": "0.0.0.0"
+  },
+  "database": {
+      "client": "sqlite3",
+      "connection": {
+          "filename": "/var/lib/ghost/content/data/ghost.db"
+      }
+  },
+  "mail": {
+      "transport": "Direct"
+  },
+  "logging": {
+      "transports": [
+          "file",
+          "stdout"
+      ]
+  },
+  "process": "systemd",
+  "paths": {
+      "contentPath": "/var/lib/ghost/content"
+  },
+  "storage": {
+      "active": "ghost-github",
+      "ghost-github": {
+          "type": "token",
+          "user": "marskid",
+          "token": "4e8f0a1bb1ea2f1d25cfeb4ab4f96849129fb873",
+          "repo": "ghost-blog",
+          "branch": "..."
+      }
+  }
+}
