@@ -27,10 +27,9 @@
       "active": "ghost-github",
       "ghost-github": {
           "type": "token",
-          "user": "...",
-          "token": "...",
-          "repo": "...",
-          "branch": "..."
+          "user": "",
+          "token": "",
+          "repo": "",
       }
   }
 }
