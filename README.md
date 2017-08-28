@@ -6,7 +6,7 @@ change the `config.production.json`
 
 Create new repo and [get new token](https://github.com/settings/tokens/new)
 
-user and repo follow the repo link format: https://github.com/{user}/{repo}
+user and repo follow the repo link format: `https://github.com/{user}/{repo}`
 
 ```
 "storage": {
