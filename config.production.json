@@ -1,5 +1,5 @@
 {
-  "url": "https://blog.marskid.net/",
+  "url": "http://localhost:2368/",
   "server": {
       "port": 2368,
       "host": "0.0.0.0"
@@ -27,9 +27,9 @@
       "active": "ghost-github",
       "ghost-github": {
           "type": "token",
-          "user": "marskid",
-          "token": "4e8f0a1bb1ea2f1d25cfeb4ab4f96849129fb873",
-          "repo": "ghost-blog",
+          "user": "...",
+          "token": "...",
+          "repo": "...",
           "branch": "..."
       }
   }
