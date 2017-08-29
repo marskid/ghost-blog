@@ -2,9 +2,12 @@
 
 [Ghost](https://ghost.org) blog using [ghost-github](https://github.com/ifvictr/ghost-github) custom storage module.
 
-change the `config.production.json`
+clone this repo.
 
-Create new repo and [get new token](https://github.com/settings/tokens/new)
+edit the `config.production.json` to your config.
+
+Create new repo and [get new token](https://github.com/settings/tokens/new).
+Do not commit your token on github. GitHub will revoke your token.
 
 user and repo follow the repo link format: `https://github.com/{user}/{repo}`
 
@@ -20,10 +23,10 @@ user and repo follow the repo link format: `https://github.com/{user}/{repo}`
 }
 ```
 
-*run commands after git clone*
+run commands after git clone
 
 ```
-git submodule init
+git submodule update --init
 
 cd ghost-github && npm install --production && cd ..
 
