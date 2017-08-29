@@ -1,5 +1,6 @@
 FROM ghost:1.7
 
+LABEL Author Melvin Wang
 LABEL io.openshift.tags ghost
 LABEL io.k8s.description Blog using ghost and github storage
 LABEL io.openshift.expose-services 2368/tcp:http
