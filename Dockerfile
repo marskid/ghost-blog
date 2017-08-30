@@ -1,4 +1,4 @@
-FROM ghost:1.7
+FROM ghost:1
 
 LABEL Author Melvin Wang
 LABEL io.openshift.tags ghost
