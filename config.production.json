@@ -24,12 +24,6 @@
       "contentPath": "/var/lib/ghost/content"
   },
   "storage": {
-      "active": "ghost-github",
-      "ghost-github": {
-          "type": "token",
-          "user": "...",
-          "token": "...",
-          "repo": "..."
-      }
+      "active": "ghost-cloudinary-store"
   }
 }

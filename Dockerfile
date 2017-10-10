@@ -12,11 +12,11 @@ WORKDIR $GHOST_INSTALL
 
 ADD config.production.json $GHOST_INSTALL
 
-ADD ghost-github $GHOST_STORAGE/ghost-github
+ADD ghost-cloudinary-store $GHOST_STORAGE/ghost-cloudinary-store
 
-WORKDIR $GHOST_STORAGE/ghost-github
+WORKDIR $GHOST_STORAGE/ghost-cloudinary-store
 
-RUN pwd && echo "Installing ghost-github. Please wait..." && npm install --production
+RUN pwd && echo "Installing ghost-cloudinary-store. Please wait..." && npm install --production
 
 WORKDIR $GHOST_INSTALL
 

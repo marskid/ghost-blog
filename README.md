@@ -1,24 +1,20 @@
 ## Ghost
 
-[Ghost](https://ghost.org) blog using [ghost-github](https://github.com/ifvictr/ghost-github) custom storage module.
+[Ghost](https://ghost.org) blog using [ghost-cloudinary-store](https://github.com/mmornati/ghost-cloudinary-store) custom storage module.
 
 clone this repo.
 
 edit the `config.production.json` to your config.
 
-Create new repo and [get new token](https://github.com/settings/tokens/new).
-Do not commit your token on github. GitHub will revoke your token.
-
-user and repo follow the repo link format: `https://github.com/{user}/{repo}`
+Create new [cloudinary](https://cloudinary.com) and [Get Account Details](https://cloudinary.com/console).
 
 ```
 "storage": {
-    "active": "ghost-github",
-    "ghost-github": {
-        "type": "token",
-        "user": "...",
-        "token": "...",
-        "repo": "...",
+    "active": "ghost-cloudinary-store",
+    "ghost-cloudinary-store": {
+        "cloud_name": "yourCloudName",
+        "api_key": "yourApiKey",
+        "api_secret": "yourApiSecret"
     }
 }
 ```
@@ -28,13 +24,11 @@ run commands after git clone
 ```
 git submodule update --init
 
-cd ghost-github && npm install --production && cd ..
-
-docker build -t ghost:github-storage .
+docker build -t ghost:cloudinary-store .
 ````
 ## Test
 ```
-docker run -it --rm -p2368:2368 ghost:github-storage
+docker run -it --rm -p2368:2368 ghost:cloudinary-store
 ```
 Go to http://your-ip:2368/ghost/#/editor and upload images.
 
