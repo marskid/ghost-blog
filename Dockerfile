@@ -1,9 +1,6 @@
 FROM ghost:1
 
 LABEL Author Melvin Wang
-LABEL io.openshift.tags ghost
-LABEL io.k8s.description Blog using ghost and github storage
-LABEL io.openshift.expose-services 2368/tcp:http
 
 ENV GHOST_INSTALL /var/lib/ghost
 ENV GHOST_STORAGE $GHOST_INSTALL/content.orig/adapters/storage
