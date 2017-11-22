@@ -24,6 +24,14 @@
       "contentPath": "/var/lib/ghost/content"
   },
   "storage": {
-      "active": "ghost-cloudinary-store"
+      "active": "ghost-cloudinary-store",
+      "ghost-cloudinary-store": {
+        "configuration": {
+            "image": {
+                "quality": "auto:good",
+                "secure": "true"
+            }
+        }
+    }
   }
 }
