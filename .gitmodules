@@ -1,6 +1,3 @@
-[submodule "ghost-github"]
-	path = ghost-github
-	url = https://github.com/ifvictr/ghost-github.git
 [submodule "ghost-cloudinary-store"]
 	path = ghost-cloudinary-store
 	url = https://github.com/mmornati/ghost-cloudinary-store.git
